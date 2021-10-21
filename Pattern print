@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+int n,out,in,sp,n1;
+ printf("Enter the number :");
+ scanf("%d",&n);
+ n1=n;
+ for(out=1;out<=n*2;out=out+2)
+ {
+     for(sp=n1;sp>=0;--sp)
+     printf(" ");
+     for(in=1;in<=out;++in)
+     {
+      printf("*");
+     }
+     printf("\n");
+     n1--;
+ }
+}
